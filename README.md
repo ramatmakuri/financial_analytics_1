@@ -1,2 +1,2 @@
-# financial_analytsics_1
+# financial_analytics_1
  
