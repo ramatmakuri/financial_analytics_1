@@ -210,13 +210,15 @@ header = ["loan_price", "remaining_months", "repayment_interval", "future_value"
 # @TODO: Use the csv library and `csv.writer` to write the header row
 # and each row of `loan.values()` from the `inexpensive_loans` list.
 # YOUR CODE HERE!
-# Iterate over all the items in dictionary and filter items which has values in inexpensive_loans list
-#create copy of the loans dictionary so that we can iterate 
+# Iterate over all the items in dictionary and filter items which has values in inexpensive_loans list - For this purpose,create a copy of the loans dictionary, iterate over the new dictionary and clear any entries that are not in the inexpensive loans list.
 newDict =  loans.copy()
 for i in newDict:
     for key, value in list(i.items()):
         if key == 'loan_price' and value not in inexpensive_loans:
-            i.clear()            
+            i.clear ()  
+        #  Remove empty dictionaries that are created by the clear method    
+while {} in newDict:
+    newDict.remove({})                    
 import csv
 from pathlib import Path 
 output_path = Path('taste.csv')
