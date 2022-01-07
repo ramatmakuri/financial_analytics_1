@@ -211,6 +211,7 @@ header = ["loan_price", "remaining_months", "repayment_interval", "future_value"
 # and each row of `loan.values()` from the `inexpensive_loans` list.
 # YOUR CODE HERE!
 # Iterate over all the items in dictionary and filter items which has values in inexpensive_loans list
+#create copy of the loans dictionary so that we can iterate 
 newDict =  loans.copy()
 for i in newDict:
     for key, value in list(i.items()):
