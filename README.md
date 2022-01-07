@@ -15,7 +15,7 @@ python
 *pip install questionary
 ```
 ## Contributors
-Brought to you by Ram Atmakuri
+Brought to you by Ram Atmakuri (ram.atmakuri@outlook.com)
 
 ## License
 [MIT] (https://choosealicense.com/licenses/mit/)
